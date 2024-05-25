@@ -1,25 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './navbar.css'
-function Navbar (){
+import { Navbar,Nav ,NavLink} from "react-bootstrap";
+
+function PersonalNavbar (){
 
     return(<>
-    <ul className="navbar">
-        <li>
-
-        <Link to ="/" >Home</Link>
-        </li>
-        <li>
-
-        <Link to ="/aboutMe">About Me</Link>
-        </li>
-        <li>
-        <Link to ="/education">Education</Link>
-        </li>
-        <li>
-        <Link to ="/expirance">Expirance</Link>
-        </li>
-    </ul>
+    <Navbar className="">
+        <Nav>
+            <Nav.Link as ={Link} to ="/">
+                Home
+            </Nav.Link>
+        </Nav>
+        <Nav>
+            <Nav.Link as = {Link} to ="/aboutMe">
+            About Me
+            </Nav.Link>
+        </Nav>
+        <Nav>
+            <Nav.Link as ={Link} to ="/expirance">
+            Experience
+            </Nav.Link>
+        </Nav>
+    </Navbar>
     </>)
 }
-export default Navbar;
+export default PersonalNavbar;

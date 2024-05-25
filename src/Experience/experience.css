@@ -1,0 +1,15 @@
+.main{
+    height: 100vh;
+    background-color: #46aed4;
+}
+.title{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 300%;
+    padding: 20px 0;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

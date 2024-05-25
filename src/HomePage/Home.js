@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import profilePic from '../public/profile.jpg'
+import { Image } from "react-bootstrap";
 import './Home.css'
 
 function Home(){
     return(
-        <div>
+        <div className="home">
             <div className="ripple">
                 <div className="circle small shade5"/>
                 <div className="circle medium shade4"/>
@@ -15,11 +17,11 @@ function Home(){
         
                 <div className="headline">
                 <h2>
-                    Im your next
+                    I'm your next
                 </h2>
                 <h1>Web developer</h1>
                 </div>
-                <img src="" alt="Alon Shraibman"/>
+                <Image src={profilePic} roundedCircle  className="profile"/>
             </div>
         </div>
     )

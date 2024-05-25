@@ -1,4 +1,3 @@
-html,body{
-  height: 100vh;
-  overflow: hidden;
+body,html{
+    background-color: #46aed4;
 }
